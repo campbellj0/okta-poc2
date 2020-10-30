@@ -11,7 +11,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '1c526101-865d-45ec-9b87-8da2a586d32d'
-  imageRepository: 'campbelljoktapoc'
+  imageRepository: 'okta-api'
   containerRegistry: 'acr02cf7810d2febfde.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/src/OktaSampleApi/Dockerfile'
   solutionPath: '$(Build.SourcesDirectory)/src'
