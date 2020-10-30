@@ -15,7 +15,6 @@ variables:
   containerRegistry: 'acr02cf7810d2febfde.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/src/OktaSampleApi/Dockerfile'
   tag: '$(Build.BuildId)'
-  system.debug: true
   
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
