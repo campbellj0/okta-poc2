@@ -14,6 +14,7 @@ variables:
   imageRepository: 'campbelljoktapoc'
   containerRegistry: 'acr02cf7810d2febfde.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/src/OktaSampleApi/Dockerfile'
+  solutionPath: '$(Build.SourcesDirectory)/src'
   tag: '$(Build.BuildId)'
   
   # Agent VM image name
@@ -33,7 +34,7 @@ stages:
       inputs:
         command: buildAndPush
         repository: $(imageRepository)
-        buildContext: '$(Build.SourcesDirectory)'
+        buildContext: $(solutionPath)
         dockerfile: $(dockerfilePath)
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
