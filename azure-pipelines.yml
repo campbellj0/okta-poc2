@@ -18,5 +18,4 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: '**/*.csproj'
-    workingDirectory: '$(System.DefaultWorkingDirectory)'
+    projects: '**/*.sln'
