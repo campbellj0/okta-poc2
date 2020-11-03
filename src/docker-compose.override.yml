@@ -10,9 +10,9 @@ services:
       - CERTIFICATE_KEY=OktaSampleApi
       #- ASPNETCORE_Kestrel__Certificates__Default__Password=password
       #- ASPNETCORE_Kestrel__Certificates__Default__Path=/https/OktaSampleApi.pfx
-      - AZURE_CLIENT_ID=0ed7ad5a-05dd-4c2b-8b84-2a3833c642bc
-      - AZURE_CLIENT_SECRET=B~O404ihlnqTiW0cUVcTFlWL9Wf-q88.Sd
-      - AZURE_TENANT_ID=3b46dc86-349d-4808-9174-13821020fb16
+      - AZURE_CLIENT_ID=d4fbe55f-9057-4040-9c86-87e4713b4ad4
+      - AZURE_CLIENT_SECRET=9fe9fe9c-74c8-46ce-8110-033a17078817
+      - AZURE_TENANT_ID=c72062b3-4200-4fb6-81d5-77d93e65d325
       - ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=OktaSampleCommon
 
     ports:
@@ -30,9 +30,9 @@ services:
       - CERTIFICATE_KEY=OktaSampleWeb
       #- ASPNETCORE_Kestrel__Certificates__Default__Password=password
       #- ASPNETCORE_Kestrel__Certificates__Default__Path=/https/OktaSampleWeb.pfx
-      - AZURE_CLIENT_ID=0ed7ad5a-05dd-4c2b-8b84-2a3833c642bc
-      - AZURE_CLIENT_SECRET=B~O404ihlnqTiW0cUVcTFlWL9Wf-q88.Sd
-      - AZURE_TENANT_ID=3b46dc86-349d-4808-9174-13821020fb16
+      - AZURE_CLIENT_ID=d4fbe55f-9057-4040-9c86-87e4713b4ad4
+      - AZURE_CLIENT_SECRET=9fe9fe9c-74c8-46ce-8110-033a17078817
+      - AZURE_TENANT_ID=c72062b3-4200-4fb6-81d5-77d93e65d325
       - ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=OktaSampleCommon
       - WeatherSettings__BaseAddress=https://OktaSampleApi
     ports:
